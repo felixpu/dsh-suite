@@ -1,0 +1,42 @@
+# dsh-suite —— 聚合包（aggregator bundle）
+#
+# ⚠️ 这不是功能插件，而是一个**只做组合**的包：
+#   · 它自己不含任何功能代码（lib/index.js 只有一行 `export {}`）；
+#   · 它通过 dependencies 依赖若干独立插件包；
+#   · 它的唯一作用是把这些包**成组装配**，让用户一次安装即可获得全套。
+#
+# 为什么用聚合包而不是「把代码合并进一个包」（重要，勿改）：
+#   1) 故障隔离：平台的行是独立加载的，某一行的 apply 抛错只让它自己失效。
+#      若把 5 份代码合并成一个包，任意一处出错会**同时拖垮全部功能**
+#      （本项目实测过一次：一组快捷键键位不被平台接受 → register 抛错 →
+#       整个插件激活失败 → 整页 "Failed to load plugins"）。
+#   2) 平台硬约束：客户端 bundle 的 id 必须等于包名，各插件的客户端半身
+#      各有自己的 id，物理上无法合并进同一个 bundle。
+#   3) 独立升级：各包仍可单独发版，聚合包无需跟着动。
+#
+# `name: cordis:group` + `group: true` 的语义（见官方 Cordis 组合参考）：
+#   config 成为一个**嵌套的 entry 列表**，并且在插件页显示为一个分组。
+#   额外好处：其他 patch 层可以按 id 往这个分组里继续插入行。
+#
+# 各行的 `id` 是本文件自定的短名（仅用于本组合内的定位与覆盖）；
+# `name` 必须是**真实的包名**，由 dependencies 保证可解析。
+- insert:
+    - id: dsh-suite
+      name: cordis:group
+      group: true
+      config:
+        # 密码门禁：打开 DSH 需输入密码解锁。
+        - id: dsh-suite-lock
+          name: 'dsh-lock'
+        # 设置分页：集中管理注入宿主的环境变量。
+        - id: dsh-suite-settings-params
+          name: 'dsh-settings-params'
+        # 设置分页：宿主进程身份与环境变量分组概览（值一律不出宿主）。
+        - id: dsh-suite-env-inspector-plus
+          name: 'dsh-env-inspector-plus'
+        # 进程控制：重启按钮与「跟随系统启动」。
+        - id: dsh-suite-restart-autostart
+          name: 'dsh-restart-autostart'
+        # 归档会话管理。
+        - id: dsh-suite-archive-session-manager
+          name: 'dsh-archive-session-manager'
