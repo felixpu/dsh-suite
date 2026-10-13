@@ -21,6 +21,12 @@ dsh plugin --profile web add dsh-plugin-suite
 装完后在「设置 → 插件」里会看到 **dsh-plugin-suite** 一个分组，展开即五个插件。
 若想单独安装某个插件，直接装它自己的仓库即可（本包不强制）。
 
+> ⚠️ **请用 npm 包名安装，不要用 `github:` 规格。**
+> 原因：pnpm 对 `github:` tarball 依赖**不解析其 `dependencies`**（lockfile 的
+> `snapshots` 段不记录依赖关系），结果就是**五个子插件根本不会被安装** ——
+> `node_modules` 里只会有本包自己。只有走 npm registry 时依赖才会被正确解析。
+> 这条是实测结论，不是推测。
+
 ## 这是什么形态：聚合包，不是「合并代码」
 
 本包 **不含任何功能代码**（`lib/index.js` 只有一行 `export {}`），它的全部内容是一份
