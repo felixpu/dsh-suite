@@ -1,7 +1,7 @@
 {
   "name": "dsh-suite",
   "version": "0.1.0",
-  "description": "DSH 插件合集（聚合包）：一次安装即获得密码门禁、设置分页扩展、进程控制与会话归档五件套。本包自身不含功能代码，只把各独立插件装配成一组，故单个插件故障不会影响其余插件。",
+  "description": "Five DSH plugins in one install: password lock, settings pages for host environment variables, host identity inspection, process restart with autostart, and archived-session management.",
   "icon": "icon.svg",
   "type": "module",
   "main": "lib/index.js",
@@ -21,12 +21,14 @@
   "exports": {
     ".": "./lib/index.js",
     "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json",
     "./package.json": "./package.json"
   },
   "files": [
     "lib",
     "cordis.patch.yml",
-    "icon.svg"
+    "icon.svg",
+    "locale/*.json"
   ],
   "dsh": {
     "bundle": {
