@@ -1,4 +1,4 @@
-# dsh-suite
+# dsh-plugin-suite
 
 DSH（DeepSeek Harness）插件合集 —— **聚合包**，一次安装即获得以下五件套。
 
@@ -15,10 +15,10 @@ DSH（DeepSeek Harness）插件合集 —— **聚合包**，一次安装即获�
 ## 安装
 
 ```sh
-dsh plugin --profile web add github:felixpu/dsh-suite
+dsh plugin --profile web add dsh-plugin-suite
 ```
 
-装完后在「设置 → 插件」里会看到 **dsh-suite** 一个分组，展开即五个插件。
+装完后在「设置 → 插件」里会看到 **dsh-plugin-suite** 一个分组，展开即五个插件。
 若想单独安装某个插件，直接装它自己的仓库即可（本包不强制）。
 
 ## 这是什么形态：聚合包，不是「合并代码」

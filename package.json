@@ -1,5 +1,5 @@
 {
-  "name": "dsh-suite",
+  "name": "dsh-plugin-suite",
   "version": "0.1.0",
   "description": "Five DSH plugins in one install: password lock, settings pages for host environment variables, host identity inspection, process restart with autostart, and archived-session management.",
   "icon": "icon.svg",
@@ -36,11 +36,11 @@
     }
   },
   "dependencies": {
-    "dsh-lock": "github:felixpu/dsh-lock",
-    "dsh-settings-params": "github:felixpu/dsh-settings-params",
-    "dsh-env-inspector-plus": "github:felixpu/dsh-env-inspector-plus",
-    "dsh-restart-autostart": "github:felixpu/dsh-restart-autostart",
-    "dsh-archive-session-manager": "github:felixpu/dsh-archive-session-manager"
+    "dsh-lock": "^0.1.3",
+    "dsh-settings-params": "^0.1.0",
+    "dsh-env-inspector-plus": "^0.1.5",
+    "dsh-restart-autostart": "^0.2.2",
+    "dsh-archive-session-manager": "^0.1.0"
   },
   "keywords": [
     "dsh",
