@@ -7,7 +7,7 @@
 #
 # 为什么用聚合包而不是「把代码合并进一个包」（重要，勿改）：
 #   1) 故障隔离：平台的行是独立加载的，某一行的 apply 抛错只让它自己失效。
-#      若把 5 份代码合并成一个包，任意一处出错会**同时拖垮全部功能**
+#      若把各份代码合并成一个包，任意一处出错会**同时拖垮全部功能**
 #      （本项目实测过一次：一组快捷键键位不被平台接受 → register 抛错 →
 #       整个插件激活失败 → 整页 "Failed to load plugins"）。
 #   2) 平台硬约束：客户端 bundle 的 id 必须等于包名，各插件的客户端半身
@@ -40,3 +40,6 @@
         # 归档会话管理。
         - id: dsh-suite-archive-session-manager
           name: 'dsh-archive-session-manager'
+        # 右侧栏标签页右键菜单：关闭左侧 / 关闭右侧 / 关闭全部。
+        - id: dsh-suite-sidebar-tab-actions
+          name: 'dsh-sidebar-tab-actions'

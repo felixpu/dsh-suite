@@ -1,7 +1,7 @@
 {
   "name": "dsh-plugin-suite",
-  "version": "0.1.0",
-  "description": "Five DSH plugins in one install: password lock, settings pages for host environment variables, host identity inspection, process restart with autostart, and archived-session management.",
+  "version": "0.2.0",
+  "description": "One install for the whole DSH plugin collection: a single aggregator bundle that assembles the separately maintained DSH plugins as one group.",
   "icon": "icon.svg",
   "type": "module",
   "main": "lib/index.js",
@@ -40,7 +40,8 @@
     "dsh-settings-params": "^0.1.0",
     "dsh-env-inspector-plus": "^0.1.5",
     "dsh-restart-autostart": "^0.2.2",
-    "dsh-archive-session-manager": "^0.1.0"
+    "dsh-archive-session-manager": "^0.1.0",
+    "dsh-sidebar-tab-actions": "^0.1.0"
   },
   "keywords": [
     "dsh",
