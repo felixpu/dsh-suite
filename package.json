@@ -1,6 +1,6 @@
 {
   "name": "dsh-plugin-suite",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "One install for the whole DSH plugin collection: a single aggregator bundle that assembles the separately maintained DSH plugins as one group.",
   "icon": "icon.svg",
   "type": "module",
@@ -41,7 +41,7 @@
     "dsh-env-inspector-plus": "^0.1.5",
     "dsh-restart-autostart": "^0.2.2",
     "dsh-archive-session-manager": "^0.1.0",
-    "dsh-sidebar-tab-actions": "^0.1.0"
+    "dsh-sidebar-tab-actions": "^0.1.1"
   },
   "keywords": [
     "dsh",

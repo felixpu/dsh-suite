@@ -11,7 +11,7 @@ DSH（DeepSeek Harness）插件合集 —— **聚合包**，一次安装即装�
 | [`dsh-env-inspector-plus`](https://github.com/felixpu/dsh-env-inspector-plus) | 设置分页：宿主进程身份与环境变量分组概览（值不出宿主） |
 | [`dsh-restart-autostart`](https://github.com/felixpu/dsh-restart-autostart) | 进程控制：重启按钮 +「跟随系统启动」 |
 | [`dsh-archive-session-manager`](https://github.com/felixpu/dsh-archive-session-manager) | 归档会话管理 |
-| [`dsh-sidebar-tab-actions`](https://github.com/felixpu/dsh-sidebar-tab-actions) | 右侧栏标签页右键菜单：关闭左侧 / 关闭右侧 / 关闭全部 |
+| [`dsh-sidebar-tab-actions`](https://github.com/felixpu/dsh-sidebar-tab-actions) | 右侧栏标签页右键菜单：关闭其他 / 关闭左侧 / 关闭右侧 / 关闭全部 |
 
 ## 安装
 
