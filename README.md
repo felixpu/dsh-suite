@@ -9,7 +9,7 @@ DSH（DeepSeek Harness）插件合集 —— **聚合包**，一次安装即装�
 | [`dsh-lock`](https://github.com/felixpu/dsh-lock) | 密码门禁：打开 DSH 需输入密码解锁，支持手动/自动锁定 |
 | [`dsh-settings-params`](https://github.com/felixpu/dsh-settings-params) | 设置分页：集中管理注入宿主的环境变量 |
 | [`dsh-env-inspector-plus`](https://github.com/felixpu/dsh-env-inspector-plus) | 设置分页：宿主进程身份与环境变量分组概览（值不出宿主） |
-| [`dsh-restart-autostart`](https://github.com/felixpu/dsh-restart-autostart) | 进程控制：重启按钮 +「跟随系统启动」 |
+| [`dsh-restart-autostart`](https://github.com/felixpu/dsh-restart-autostart) | 进程控制：重启按钮 +「跟随系统启动」+ 一键升级 dsh 主程序 |
 | [`dsh-archive-session-manager`](https://github.com/felixpu/dsh-archive-session-manager) | 归档会话管理 |
 | [`dsh-sidebar-tab-actions`](https://github.com/felixpu/dsh-sidebar-tab-actions) | 右侧栏标签页右键菜单：关闭其他 / 关闭左侧 / 关闭右侧 / 关闭全部 |
 
